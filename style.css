@@ -1,5 +1,5 @@
 body {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 /* Custom styles for the separator */
@@ -17,4 +17,8 @@ body {
 
 .pricing-header {
     max-width: 700px;
+}
+
+.image-custom {
+    object-fit: cover;
 }
