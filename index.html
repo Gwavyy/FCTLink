@@ -15,10 +15,13 @@
     <!-- Nuesto CSS -->
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Shared JavaScript -->
+    <script defer src="./shared_script.js"></script>
 </head>
 
 <body>
 
+    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -57,22 +60,18 @@
                 formación profesional y a las empresas encontrar el talento que necesitan para crecer.
             </p>
 
-        </div>
+            <!-- Blockquote (https://getbootstrap.com/docs/5.3/content/typography/) -->
+            <div class="mt-3 p-2">
+                <figure class="text-end">
+                    <blockquote class="blockquote">
+                    <p>El aprendizaje nunca agota la mente.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        <cite title="Source Title">Leonardo Da Vinci</cite>
+                    </figcaption>
+                </figure>
+            </div>
 
-
-        <hr class="separator">
-
-
-        <!-- Blockquote (https://getbootstrap.com/docs/5.3/content/typography/) -->
-        <div class="mt-3 p-5">
-            <figure class="text-end">
-                <blockquote class="blockquote">
-                  <p>El aprendizaje nunca agota la mente.</p>
-                </blockquote>
-                <figcaption class="blockquote-footer">
-                    <cite title="Source Title">Leonardo Da Vinci</cite>
-                </figcaption>
-            </figure>
         </div>
 
 
@@ -82,7 +81,7 @@
         <!-- Carousel y texto -->
         <div class="row mt-3 p-5">
             <!-- Carousel (https://getbootstrap.com/docs/5.3/components/carousel/) -->
-            <div class="col-md-8">
+            <div class="col-md-9">
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -137,8 +136,13 @@
             </div>
 
             <!-- Texto -->
-            <div class="col-md-4">
-                <p>Texto aqui</p>
+            <div class="col-md-3">
+                <p class="fs-5 text-secondary">
+                    <strong>FCTLink</strong> es el puente que <strong>conecta</strong> estudiantes, empresas e institutos en un entorno dinámico y <strong>eficiente</strong>. 
+                    Nuestra plataforma facilita la búsqueda de <strong>prácticas</strong>, fomenta el desarrollo profesional y promueve la 
+                    colaboración para impulsar el talento emergente en <strong>España</strong>. Creemos en el poder de la innovación, la 
+                    transparencia y el compromiso como pilares fundamentales para construir un <strong>futuro</strong> laboral brillante para todos.
+                </p>
             </div>
 
         </div>
@@ -190,7 +194,25 @@
             </div>        
         </div>
 
+        faltaría algo aqui con imagenes o algo dinámico
+
 	</div>
+
+
+    <!-- Toast, oculto por defecto, se muestra cuando el usuario envia el formulario (https://getbootstrap.com/docs/5.3/components/toasts/) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="../static/logo.png" height="30" width="30" class="rounded me-2" alt="FCTLink logo">
+                <strong class="me-auto">FCTLink</strong>
+                <small>Justo ahora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Te has suscrito correctamente, recibiras la información en cuanto salga! Muchas gracias.
+            </div>
+        </div>
+    </div>
 
 
     <hr class="separator">
@@ -230,14 +252,14 @@
             </div>
         
             <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                <h5>Subscríbete a nosotros</h5>
-                <p>Recibe notificaciones antes que nadie sobre ofertas imperdibles.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email...</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email...">
-                    <button class="btn btn-primary" type="button">Subscríbete</button>
-                </div>
+                <form id="subscription-form">
+                    <h5>Subscríbete a nosotros</h5>
+                    <p>Recibe notificaciones antes que nadie sobre ofertas imperdibles.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="subscription-email" class="visually-hidden">Email...</label>
+                        <input required id="subscription-email" type="email" class="form-control" placeholder="Email...">
+                        <button class="btn btn-primary" type="submit" id="btn-suscription">Subscríbete</button>
+                    </div>
                 </form>
             </div>
             </div>
@@ -245,9 +267,9 @@
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2024 FCTLink S.L., Todos los derechos reservados.</p>
             <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://x.com/" target="_blank"><img src="./static/x.png" height="24" width="24" alt="x"></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://instagram.com/" target="_blank"><img src="./static/instagram.png" height="24" width="24" alt="instagram"></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://facebook.com/" target="_blank"><img src="./static/facebook.png" height="24" width="24" alt="facebook"></a></li>
             </ul>
             </div>
         </footer>

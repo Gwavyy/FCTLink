@@ -9,6 +9,7 @@ const contactMessage = document.getElementById("contact-message")
 const contactSubmit = document.getElementById("contact-submit")
 const submitValidationMessage = document.getElementById("submit-validation-message")
 
+
 function initializeListeners() {
     contactForm.addEventListener("submit", submitContactForm)
     contactName.addEventListener("input", validateContact)
@@ -21,7 +22,7 @@ function submitContactForm(event) {
 
     if (validateContact()) {
         console.log("Form submitted")
-        showToast()
+        showToast("toast")
         clearContactForm()
     }
 }
@@ -46,8 +47,8 @@ function clearContactForm() {
     contactSubmit.disabled = true
 }
 
-function showToast() {
-    const toast = document.getElementById('toast')
+function showToast(id) {
+    const toast = document.getElementById(id)
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast)
 
     toastBootstrap.show()
