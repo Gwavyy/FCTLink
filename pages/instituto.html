@@ -62,7 +62,7 @@
         <hr class="separator">
 
         <!-- Opciones -->
-        <div id="opciones" class="container">
+        <div id="detalles" class="container">
             <h2 class="fw-bold text-center mb-4">Opciones para Institutos</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
@@ -152,31 +152,69 @@
 
     </div>
 
+
     <hr class="separator">
 
-    <!-- Footer -->
-    <footer class="bg-light p-4">
-        <div class="container">
+
+    <!-- Footer desde https://getbootstrap.com/docs/5.3/examples/footers/ -->
+    <div class="container bg-light">
+        <footer class="p-4 mt-4">
+
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Enlaces rápidos</h5>
-                    <ul>
-                        <li><a href="./empresa.html">Empresas</a></li>
-                        <li><a href="./estudiante.html">Estudiantes</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Empresa</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="./empresa.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
+                    <li class="nav-item mb-2"><a href="./empresa.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                    <li class="nav-item mb-2"><a href="./empresa.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 text-center">
-                    <h5>Sobre Nosotros</h5>
-                    <p>FCTLink conecta talento con oportunidades para el éxito profesional.</p>
+            
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Estudiante</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./estudiante.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
+                        <li class="nav-item mb-2"><a href="./estudiante.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="./estudiante.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4 text-end">
-                    <h5>Síguenos</h5>
-                    <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a>
+            
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Instituto</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="./instituto.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#detalles" class="nav-link p-0 text-body-secondary">Detalles</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
+                    </ul>
                 </div>
+            
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                    <h5>Subscríbete a nosotros</h5>
+                    <p>Recibe notificaciones antes que nadie sobre ofertas imperdibles.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email...</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email...">
+                        <button class="btn btn-primary" type="button">Subscríbete</button>
+                    </div>
+                    </form>
+                </div>
+                
             </div>
-        </div>
-    </footer>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2024 FCTLink S.L., Todos los derechos reservados.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 </html>

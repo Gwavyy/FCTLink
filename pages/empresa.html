@@ -49,7 +49,7 @@
     <div class="container bg-light p-4">      
 
         <!-- Información -->
-        <div class="row">
+        <div class="row" id="informacion">
             <div class="col-md-8">
                 <div class="p-4 rounded-3 shadow-sm">
                     <h2 class="fw-bold mb-3 text-primary">FCTLink para Empresas</h2>
@@ -75,11 +75,11 @@
 
 
         <!-- Precios (https://getbootstrap.com/docs/5.3/examples/pricing/) -->
-        <div class="container">
+        <div class="container" id="precios">
 
             <header>
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4 fw-normal text-body-emphasis">Ofertas y Precios</h1>
+                    <h2 class="display-4 fw-normal text-body-emphasis">Ofertas y Precios</h2>
                     <p class="fs-5 text-body-secondary">
                         En FCTLink, facilitamos la conexión entre empresas y estudiantes en busca de 
                         prácticas formativas. Nuestra plataforma simplifica el proceso, permitiendo que 
@@ -148,7 +148,7 @@
                 
                 <h2 class="display-6 text-center mb-4">Comparador</h2>
                 
-                <div class="table-responsive">
+                <div class="table-responsive" id="comparador">
                     <table class="table text-center">
                         <thead>
                         <tr>
@@ -187,16 +187,10 @@
                         </tbody>
                         <tbody>
                             <tr>
-                                <th scope="row" class="text-start">Soporte técnico basico</th>
-                                <td><img width="17" height="17" src="../static/check.png" alt="Checked"></td>
-                                <td><img width="17" height="17" src="../static/check.png" alt="Checked"></td>
-                                <td><img width="17" height="17" src="../static/check.png" alt="Checked"></td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-start">Soporte técnico prioritario</th>
-                                <td></td>
-                                <td></td>
-                                <td><img width="17" height="17" src="../static/check.png" alt="Checked"></td>
+                                <th scope="row" class="text-start">Soporte técnico</th>
+                                <td>Básico</td>
+                                <td>Básico</td>
+                                <td>Prioritario</td>
                             </tr>
                         </tbody>
                     </table>
@@ -221,8 +215,8 @@
                     <h5>Empresa</h5>
                     <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="./empresa.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
-                    <li class="nav-item mb-2"><a href="./empresa.html#opciones" class="nav-link p-0 text-body-secondary">Opciones</a></li>
                     <li class="nav-item mb-2"><a href="./empresa.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                    <li class="nav-item mb-2"><a href="./empresa.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
                     </ul>
                 </div>
             
@@ -230,8 +224,8 @@
                     <h5>Estudiante</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="./estudiante.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
-                        <li class="nav-item mb-2"><a href="./estudiante.html#opciones" class="nav-link p-0 text-body-secondary">Opciones</a></li>
                         <li class="nav-item mb-2"><a href="./estudiante.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="./estudiante.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
                     </ul>
                 </div>
             
@@ -239,8 +233,9 @@
                     <h5>Instituto</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="./instituto.html#informacion" class="nav-link p-0 text-body-secondary">Información</a></li>
-                        <li class="nav-item mb-2"><a href="./instituto.html#opciones" class="nav-link p-0 text-body-secondary">Opciones</a></li>
-                        <li class="nav-item mb-2"><a href="./instituto.html##precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#detalles" class="nav-link p-0 text-body-secondary">Detalles</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#precios" class="nav-link p-0 text-body-secondary">Precios</a></li>
+                        <li class="nav-item mb-2"><a href="./instituto.html#comparador" class="nav-link p-0 text-body-secondary">Comparador</a></li>
                     </ul>
                 </div>
             
